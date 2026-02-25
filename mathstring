@@ -17,10 +17,32 @@ $base = 2;
 $exp = 3;
 echo "pow($base, $exp) = ". pow($base, $exp) ."<br>";
 
-$number = -10;
-echo "abs($number) = ". abs( $number ) ."<br>";
-
-$number = -10;
-echo "abs($number) = ". abs( $number ) ."<br>";
+$number = 16;
+echo "sqrt($number) = ". sqrt( $number ) ."<br>";
 
 
+echo "max(1,5,3) = ". max( $number ) ."<br>";
+echo "min(1,5,3) = ". min( $number ) ."<br>";
+
+echo "rand(1,100) = ". rand( 1,100 ) ."<br>";
+
+$str = "Hello World";
+echo "strlen($str) = ". strlen( $str ) ."<br>";
+
+echo "strtoupper($str) = ". strtoupper( $str ) ."<br>";
+
+echo "strtolower($str) = ". strtolower( $str ) ."<br>";
+
+$str3 = "apple,banana.orange";
+
+$fruits = explode(',',$str3);
+echo "explode(',','$str3') =";
+print_r( $fruits );
+echo "<br>";
+
+$joined = implode(",",$fruits );
+echo "implode('-', fruits) = $joined<br>";
+
+echo "strrev('$str') =". strrev($str)."<br>";
+
+?>
